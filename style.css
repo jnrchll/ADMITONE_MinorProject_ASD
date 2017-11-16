@@ -1,0 +1,293 @@
+  
+.header {
+	border: none;
+	color: none;
+	padding: 0px 0px 0px 10px;
+	height: 30px;
+	top: 0px;
+	left: 0px;
+	width: 95%;
+	z-index:0;
+	}
+
+.logo {
+	border: none;
+	float: left;
+	top: 0px;
+	padding: 13px 0px 0px 0px;
+	font-size: 100%;
+	}
+
+
+.nav {
+	display: center;
+	float:right;
+	position: relative;
+	padding: 20px 0px 0px 5px;
+	margin: 0px 10px 0px 10px;
+    text-decoration: none;
+    color:#91C7A9;
+    font-variant: small-caps;
+    font-family: ORATOR STD;
+    font-size: 30px; 
+}
+
+.nav:hover {
+	 display: center;
+	float:right;
+	position: relative;
+	padding: 20px 0px 0px 5px;
+	margin: 0px 10px 0px 10px;
+    text-decoration: none;
+    color: white;
+    font-variant: small-caps;
+    font-family: ORATOR STD;
+    font-size: 30px; 
+}
+
+#display {
+	padding: 100px 0px 0px 0px; 
+}
+
+
+.fling-minislide {
+	float:left;
+	width: 700px;
+	height: 550px;
+	padding: 0px 0px 0px 100px;
+	overflow: hidden;
+	position: relative;
+}
+.fling-minislide img{
+	position: absolute;
+	animation: fling-minislide 40s infinite;
+	opacity: 0;
+	width: 700px;
+	height: 600px;
+}
+@keyframes fling-minislide{
+	25%{opacity:1;} 40%{opacity:0;}
+}
+.fling-minislide img:nth-child(4){
+	animation-delay:0s;
+}
+.fling-minislide img:nth-child(3){
+	animation-delay:5s;
+}
+.fling-minislide img:nth-child(2){
+	animation-delay:10s;
+}
+.fling-minislide img:nth-child(1){
+	animation-delay:15s;
+}
+.register {
+	float:right;
+	padding: 50px 100px 0px 0px;
+}
+
+#frm{ 
+width: 100px; 
+height: 50px; 
+border: none; 
+padding: 2px;
+color: #000;
+font-size: 18px;
+margin-bottom: 15px;
+}
+#text {
+	color: #000;
+}
+#type {
+	color: #000;
+}
+
+td {
+	color: #000;
+}
+
+
+
+#menu {
+	text-align: left;
+	padding: 100px 0px 0px 0px;
+}
+
+.mnu {
+	padding: 10px 10px 0px 15px;
+    text-decoration: none;
+    color:#91C7A9;
+    font-variant: small-caps;
+    font-family: MV BOLI;
+    font-size: 25px;
+}
+
+.mnu:hover {
+	 text-decoration: none;
+    color:#A92F41;
+    font-variant: small-caps;
+    font-family: MV BOLI;
+    font-size: 25px;
+}
+
+
+#showing {
+	text-align: center;
+	padding: 20px 30px 15px 30px;
+}
+
+.poster {
+	padding: 0px 10px 0px 10px;
+	float: left;
+	width: 350px;
+}
+
+
+
+#cinemapos {
+	padding: 10px 0px 0px px;
+}
+
+.poster1 {
+	float:left;
+	padding: 20px 0px 0px 80px;
+}
+
+.details {
+		float: right;
+		text-align: center;
+		padding: 10px 200px 0px 0px;
+}
+
+.ticketbutton {
+		float: right;
+		text-align: center;
+		padding: 50px 50px 0px 0px;
+}
+
+h3 {
+	font-size: 52px;
+	color: #e5dfc5;
+	padding: 0px 0px 30px 0px;
+}
+h4 {
+	font-size: 38px;
+	color: #e5dfc5;
+	padding: 20px 0px 20px 0px;
+}
+p {
+	font-size: 20px;
+	color: #e5dfc5;
+	padding: 0px 0px 0px 0px;
+}
+#cinemanum {
+	padding: 0px 0px 0px 0px;
+	text-align: center;
+}
+
+.cinema {
+	padding: 0px 120px 0px 120px;
+    text-decoration: none;
+    color:#91C7A9;
+    font-variant: small-caps;
+    font-family: ORATOR STD;
+    font-size: 20px; 
+}
+.infoform
+{
+	float:right;
+	padding: 50px 300px 0px 0px;
+}
+h5 {
+	font-size: 32px;
+	color: #e5dfc5;
+	padding: 0px 0px 30px 0px;
+}
+
+#subcontainer {
+    margin-top: 100px;
+}
+
+#movieinfo {
+	border: 1px solid #000;
+	border-spacing: 0px;
+	margin: 0px auto;
+}
+
+#movieinfo .img {
+	width: 200px;
+}
+
+#movieinfo .title {
+	width: 500px;
+}
+
+#movieinfo .time {
+	width: 150px;
+}
+
+#movieinfo .action {
+	width: 150px;
+}
+
+#movieinfo .movieimgcontainer{
+	width: 150px;
+	height: 150px;
+}
+
+
+#seatinfocontainer {
+	margin: 20px auto;
+    width: 1000px;
+}
+
+#seatcont {
+	margin: 20px auto;
+    width: 1000px;
+}
+
+
+#seatinfocontainer #screen {
+	background-color: #e6e6e6;
+	width: 800px;
+	height: 20px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+#seatinfotbl {
+	margin: 10px auto;
+}
+
+#seatinfotbl input[type="submit" i] {
+	width: 70px;
+}
+
+#seatinfotbl .seattableai{
+	margin-right: 10px;
+}
+
+#subcontainer #thankyou1{
+    width: 700px;
+    margin: 0px auto;
+    border: 1px solid #000;
+    padding: 20px;
+    height: 300px;
+}
+
+#subcontainer #thankyou1 h1{
+	text-align: center;
+	margin: 0px;
+}
+
+#totalpayment{
+    width: 500px;
+    margin: 0px auto;
+    border: 1px solid #000;
+    padding: 20px;
+    height: 100px;
+}
+
+#totalpayment h1 {
+	font-size: 14px;
+}
+
