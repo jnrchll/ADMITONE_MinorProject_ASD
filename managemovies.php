@@ -12,7 +12,7 @@ include("database.php");
 <div id="menu">
 	
 				<a class="mnu" href="managemovies.php"><img src="img/roll.png" width="30" height="30">Now Showing</a>
-				<a class="mnu" href="comingsoon.php"><img src="img/film.png" width="30" height="30">Coming Soon</a>
+				<a class="mnu" href="managecomingsoon.php"><img src="img/film.png" width="30" height="30">Coming Soon</a>
 				<a class="mnu" href="#promos"><img src="img/popcorn.png" width="30" height="30">Promos and Events</a>
 			</div>          		
 	<div id="showing">
