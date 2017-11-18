@@ -40,7 +40,7 @@ $result = mysqli_query($connection, $query);
 			</div>
 			<div>				
 					<input type="hidden" name="movieid" value="<?php echo $row['movieid']; ?>" >
-					<td><input id="type" type="submit" name="buy_ticket" value="Buy Ticket" /></td>
+					<td><input id="buyticket" type="submit" name="buy_ticket" value="Buy Ticket" /></td>
 				
 			</div>
 			</form>
