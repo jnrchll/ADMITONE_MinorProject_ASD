@@ -9,6 +9,13 @@ include("database.php");
 
 
 ?>
+<div id="menu">
+	
+				<a class="mnu" href="managemovies.php"><img src="img/roll.png" width="30" height="30">Now Showing</a>
+				<a class="mnu" href="comingsoon.php"><img src="img/film.png" width="30" height="30">Coming Soon</a>
+				<a class="mnu" href="#promos"><img src="img/popcorn.png" width="30" height="30">Promos and Events</a>
+			</div>          		
+	<div id="showing">
 <div id = "movies">
 	
 	<table id="movieinfo">
@@ -17,7 +24,7 @@ include("database.php");
 			<td id="theader" class="title"><div>Movie Title </div></td>
 			<td id="theader" class="action"><div>Action </div></td>
 		</tr>
-<?php
+	<?php
 			$query = "SELECT * FROM moviesinfo";
 	
 			$result = mysqli_query($connection, $query);
@@ -30,12 +37,12 @@ include("database.php");
 						<td class="title"><div><?php echo $row['movietitle']; ?></div></td>
 						<td class="action">
 							<form action="editmovie.php" method="POST">
-								<input type="submit" name="edit" value="Edit" />
-								<input type="hidden" name="movieid" value="<?php echo $row['movieid']; ?>" >
+								<input id="in" type="submit" name="edit" value="Edit" />
+								<input id="in" type="hidden" name="movieid" value="<?php echo $row['movieid']; ?>" >
 							</form>
 							<form action="deletemovie.php" method="POST">
-								<input type="submit" name="delete" value="Delete" />
-								<input type="hidden" name="movieid" value="<?php echo $row['movieid']; ?>" >
+								<input id="in" type="submit" name="delete" value="Delete" />
+								<input id="in"type="hidden" name="movieid" value="<?php echo $row['movieid']; ?>" >
 							</form>
 						</td>
 					</tr>
