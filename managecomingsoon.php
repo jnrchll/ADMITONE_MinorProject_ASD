@@ -36,11 +36,11 @@ include("database.php");
 						<td class="img"><div><img class="movieimgcontainer" src="img/<?php echo $row['imgfilename']; ?>"></div></td>
 						<td class="title"><div><?php echo $row['movietitle']; ?></div></td>
 						<td class="action">
-							<form action="editmovie.php" method="POST">
+							<form action="editcs.php" method="POST">
 								<input id="in" type="submit" name="edit" value="Edit" />
 								<input id="in" type="hidden" name="movieid" value="<?php echo $row['movieid']; ?>" >
 							</form>
-							<form action="deletemovie.php" method="POST">
+							<form action="deletecs.php" method="POST">
 								<input id="in" type="submit" name="delete" value="Delete" />
 								<input id="in"type="hidden" name="movieid" value="<?php echo $row['movieid']; ?>" >
 							</form>
