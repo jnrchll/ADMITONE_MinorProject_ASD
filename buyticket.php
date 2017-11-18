@@ -18,11 +18,13 @@ $result = mysqli_query($connection, $query);
 <div id="seatinfocontainer">
 	<div>
 	
-	<span><?php 
+	<span id="cindetails"><?php 
 			while($row = mysqli_fetch_array($result))
 			{
-				echo "<span>Movie: </span>";
+				echo "Movie: ";
 				echo $row['movietitle'];
+				echo "</br>Description: ";
+				echo $row['description'];
 				echo "</br><span>Cinema: </span>";
 				echo $row['cinema'];
 			}
@@ -31,8 +33,8 @@ $result = mysqli_query($connection, $query);
 	
 	<form action="buyticket.php" method="POST">
 	<div>
-		<span>Select Time: </span>
-		<span><?php echo $time; ?> </span>
+		<span id="cintime">Time:
+		<?php echo $time; ?> </span>
 	</div>
 	</form>
 	<form action="customerinfo.php" method="POST">
