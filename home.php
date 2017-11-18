@@ -20,14 +20,14 @@ $result = mysqli_query($connection, $query);
 				<img src="img/<?php echo $row['imgfilename']; ?>" width="300" height="430">
 			</div>
 			<div>
-				<span id="movietitlelabel">Movie Title: </span> <?php echo $row['movietitle']; ?>
+				<span id="movietitlelabel">Movie Title:  <?php echo $row['movietitle']; ?></span>
 			</div>
 			<div>
-				<span id="descriptionlabel">Description: </span> <?php echo $row['description']; ?>
+				<span id="descriptionlabel">Description:  <?php echo $row['description']; ?></span>
 			</div>
 			<form action="buyticket.php" method="POST">
 			<div>
-				<span>Time schedule: </span>
+				<span id="timesched">Time schedule: </span>
 					<select name="timesel">
 						<option value="10:00AM-12:00PM" selected>10:00AM-12:00PM</option>
 						<option value="01:00PM-03:00PM">01:00PM-03:00PM</option>
