@@ -22,9 +22,6 @@ $result = mysqli_query($connection, $query);
 			<div>
 				<span id="movietitlelabel">Movie Title:  <?php echo $row['movietitle']; ?></span>
 			</div>
-			<div>
-				<span id="descriptionlabel">Description:  <?php echo $row['description']; ?></span>
-			</div>
 			<form action="buyticket.php" method="POST">
 			<div>
 				<span id="timesched">Time schedule: </span>
