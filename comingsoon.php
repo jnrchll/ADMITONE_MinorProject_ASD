@@ -1,24 +1,15 @@
-<html>
-<head>
- <link rel="stylesheet" type="text/css" href="style.css" />
-		
-        <title>CinemaReservation</title>
-</head>
-<body>
-	<div id="MainContainer">
-		
-			<div class="header">
-			<div class="logo"><img src="img/logo.png" alt="logo" width="300" height="60"/>
-			</div>
-			<a class="nav" href="myprofile.php?<?php 
-			if(isset($_REQUEST['id']))
-			{
-				echo "id=".$_SESSION['usedID'] = $_REQUEST['id']; //userID of logged in user
-			}
-			?>">My Profile</a>
-	<a class="nav" href="login.php">Logout</a>
-			</div>
-            
+<?php
+session_start(); 
+$loggedinID = $_SESSION['userID'];
+
+include("menu2.php");
+include("database.php");
+
+$query = "SELECT * FROM moviesinfo";
+	
+$result = mysqli_query($connection, $query);
+?>
+          		
             <div id="menu">
 	
 				<a class="mnu" href="home.php"><img src="img/roll.png" width="30" height="30">Now Showing</a>

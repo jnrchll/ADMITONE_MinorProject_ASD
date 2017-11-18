@@ -112,11 +112,11 @@ td {
 
 #menu {
 	text-align: left;
-	padding: 100px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 }
 
 .mnu {
-	padding: 10px 10px 0px 15px;
+	padding: 10px 10px 10px 15px;
     text-decoration: none;
     color:#91C7A9;
     font-variant: small-caps;
@@ -150,9 +150,9 @@ td {
 	font-size: 28px;
 }
 
-
 #descriptionlabel {
 	color:#fff;
+font-family: ORATOR STD;
 }
 
 #timesched {
@@ -160,15 +160,22 @@ td {
 	font-family: ORATOR STD;
 }
 
+#op {
+	color: #fff;
+}
+
 #cindetails {
 	color: #fff;
+	font-family: COMIC SANS MS;
 	
 }
 
-
 #cintime {
 	color: #fff;
+	font-family: COMIC SANS MS;
 }
+
+
 .infoform
 {
 	float:right;
