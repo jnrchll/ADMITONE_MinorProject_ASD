@@ -181,11 +181,6 @@ font-family: ORATOR STD;
 	float:right;
 	padding: 50px 300px 0px 0px;
 }
-h5 {
-	font-size: 32px;
-	color: #e5dfc5;
-	padding: 0px 0px 30px 0px;
-}
 
 #subcontainer {
     margin-top: 100px;
@@ -268,9 +263,19 @@ h5 {
     margin: 0px auto;
     border: 1px solid #000;
     padding: 20px;
+	color: #fff;
+	font-size: 20px;
     height: 100px;
+	
 }
-
+h5 {
+	font-size: 32px;
+	color: #e5dfc5;
+	padding: 0px 0px 30px 0px;
+}
+#in {
+	color: #fff;
+}
 #totalpayment h1 {
 	font-size: 14px;
 }

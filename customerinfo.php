@@ -19,8 +19,8 @@ $result = mysqli_query($connection, $query);
 	<div id="totalpayment">
 		<h1>Selected Seat #: <?php echo $seatnum; ?></h1>
 		<h1>Number of Seats: 1 </h1>
-		<h1>Ticket Price: Php 300.00 </h1>
-		<h1>Total Amount: Php 300.00 </h1>
+		<h1>Ticket Price: Php 180.00 </h1>
+		<h1>Total Amount: Php 180.00 </h1>
 	</div>
 	
 	<div class="infoform">
@@ -29,35 +29,27 @@ $result = mysqli_query($connection, $query);
 				<table>
 					<tr>
 						<td><div >First Name: </div></td>
-						<td><input type="text" name="customerfname" value="" /></td>
+						<td><input id="in" type="text" name="customerfname" value="" /></td>
 					</tr>
 					<tr>
 						<td><div >Last Name: </div></td>
-						<td><input type="text" name="customerlname" value="" /></br></td>
+						<td><input id="in" type="text" name="customerlname" value="" /></br></td>
 					</tr>
 					<tr>
 						<td><div >Age: </div></td> 
-						<td><input type="text" name="age" value="" /></br></td>
+						<td><input id="in" type="text" name="age" value="" /></br></td>
 					</tr>
 					<tr>
 						<td><div >Contact Number: </div></td>
-						<td><input type="text" name="contactnum" value="" /></br></td>
+						<td><input id="in" type="text" name="contactnum" value="" /></br></td>
 					</tr>
 					<tr>
 						<td><div >Card #: </div></td>
-						<td><input type="text" name="cardnum" value="" /></br></td>
+						<td><input id="in" type="text" name="cardnum" value="" /></br></td>
 					</tr>
 					<tr>
 						<td><div >Card Name: </div></td>
-						<td><input type="text" name="cardname" value="" /></br></td>
-					</tr>
-					<tr>
-						<td><div >Expiry Date (mm/yyyy): </div></td>
-						<td><input type="text" name="expdate" value="" /></br></td>
-					</tr>
-					<tr>
-						<td><div >Security Code: </div></td>
-						<td><input type="text" name="seccode" value="" /></br></td>
+						<td><input id="in" type="text" name="cardname" value="" /></br></td>
 					</tr>
 					<tr>
 						<td>
