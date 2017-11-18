@@ -1,4 +1,7 @@
-  
+*{
+    background-color:#000;
+   
+} 
 .header {
 	border: none;
 	color: none;
@@ -90,19 +93,19 @@ width: 100px;
 height: 50px; 
 border: none; 
 padding: 2px;
-color: #000;
+color: #fff;
 font-size: 18px;
 margin-bottom: 15px;
 }
 #text {
-	color: #000;
+	color: #fff;
 }
 #type {
-	color: #000;
+	color: #fff;
 }
 
 td {
-	color: #000;
+	color: #fff;
 }
 
 
@@ -136,61 +139,35 @@ td {
 }
 
 .poster {
-	padding: 0px 10px 0px 10px;
+	padding: 0px 30px 0px 30px;
 	float: left;
 	width: 350px;
 }
 
-
-
-#cinemapos {
-	padding: 10px 0px 0px px;
+#movietitlelabel {
+	color: #fff;
+	font-family: CANDARA;
+	font-size: 28px;
 }
 
-.poster1 {
-	float:left;
-	padding: 20px 0px 0px 80px;
+
+#descriptionlabel {
+	color:#fff;
 }
 
-.details {
-		float: right;
-		text-align: center;
-		padding: 10px 200px 0px 0px;
+#timesched {
+	color: #fff;
+	font-family: ORATOR STD;
 }
 
-.ticketbutton {
-		float: right;
-		text-align: center;
-		padding: 50px 50px 0px 0px;
+#cindetails {
+	color: #fff;
+	
 }
 
-h3 {
-	font-size: 52px;
-	color: #e5dfc5;
-	padding: 0px 0px 30px 0px;
-}
-h4 {
-	font-size: 38px;
-	color: #e5dfc5;
-	padding: 20px 0px 20px 0px;
-}
-p {
-	font-size: 20px;
-	color: #e5dfc5;
-	padding: 0px 0px 0px 0px;
-}
-#cinemanum {
-	padding: 0px 0px 0px 0px;
-	text-align: center;
-}
 
-.cinema {
-	padding: 0px 120px 0px 120px;
-    text-decoration: none;
-    color:#91C7A9;
-    font-variant: small-caps;
-    font-family: ORATOR STD;
-    font-size: 20px; 
+#cintime {
+	color: #fff;
 }
 .infoform
 {
