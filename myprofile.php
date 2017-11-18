@@ -15,6 +15,7 @@ include("menu2.php");
 			while($row = mysqli_fetch_array($result))
 			{
 			?>
+			<div id="prof">
 				<form action="update.php" method="POST">
 				<table>
 					<tr>
