@@ -23,9 +23,9 @@ $result = mysqli_query($connection, $query);
 			{
 				echo "Movie: ";
 				echo $row['movietitle'];
-				echo "</br>Description: ";
+				echo "</br></br>Description: ";
 				echo $row['description'];
-				echo "</br><span>Cinema: </span>";
+				echo "</br></br><span>Cinema: </span>";
 				echo $row['cinema'];
 			}
 	?> </span>
@@ -33,7 +33,7 @@ $result = mysqli_query($connection, $query);
 	
 	<form action="buyticket.php" method="POST">
 	<div>
-		<span id="cintime">Time:
+		<span id="cintime"></br>Time:
 		<?php echo $time; ?> </span>
 	</div>
 	</form>
