@@ -13,7 +13,7 @@ $result = mysqli_query($connection, $query);
 	
 				<a class="mnu" href="home.php"><img src="img/roll.png" width="30" height="30">Now Showing</a>
 				<a class="mnu" href="comingsoon.php"><img src="img/film.png" width="30" height="30">Coming Soon</a>
-				<a class="mnu" href="#promos"><img src="img/popcorn.png" width="30" height="30">Promos and Events</a>
+				<a class="mnu" href="promosevents.php"><img src="img/popcorn.png" width="30" height="30">Promos and Events</a>
 			</div>          		
 	<div id="showing">
 	<?php
