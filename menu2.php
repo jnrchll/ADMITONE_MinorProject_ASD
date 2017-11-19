@@ -24,10 +24,10 @@ $loggedinID = $_SESSION['userID'];
 			{
 				if($row['usertype'] == "administrator"){ ?>
 				<div class="logo">
-					<a href="home.php"><img src="img/logo.png" alt="logo" width="300" height="60"/>
+					<a href="managemovies.php"><img src="img/logo.png" alt="logo" width="300" height="60"/>
 				</div>
 					<a class="nav" href="managemovies.php">Manage Movies</a>
-					<a class="nav" href="managereservation.php">Manage Reservations</a>
+					<a class="nav" href="managereservations.php">Manage Reservations</a>
 					<a class="nav" href="index.php">Logout</a>
 			<?php 
 				}
