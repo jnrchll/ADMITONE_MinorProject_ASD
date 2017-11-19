@@ -70,11 +70,11 @@ include("database.php");
 						include("menu2.php");
 						?>
 						<div id="thankyou1">
-							<h1>Thank You!</h1>
+							<h1>Transaction Successful! Thank You!</h1>
 							<table id="receipt">
 								<tr>
-									<td> Name:</td>
-									<td> <?php echo $row3['customerfname']." ".$row3['customerlname']; ?></td>
+									<td></br></br></br> Name:</td>
+									<td></br></br></br> <?php echo $row3['customerfname']." ".$row3['customerlname']; ?></td>
 								</tr>
 								<tr>
 									<td> Seat #:</td>
