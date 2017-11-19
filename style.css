@@ -1,10 +1,10 @@
 *{
-    background-color:#000;
+    background-color:#1e1c1d;
    
 } 
 .header {
 	border: none;
-	color: none;
+
 	padding: 0px 0px 0px 10px;
 	height: 30px;
 	top: 0px;
@@ -117,7 +117,6 @@ td {
 	color: #fff;
 }
 
-
 #menu {
 	text-align: left;
 	padding: 0px 0px 0px 0px;
@@ -133,7 +132,8 @@ td {
 }
 
 .mnu:hover {
-	 text-decoration: none;
+	background-color: #0B3C5D;
+	text-decoration: none;
     color:#A92F41;
     font-variant: small-caps;
     font-family: GADUGI;
@@ -171,6 +171,10 @@ font-family: ORATOR STD;
 #op {
 	color: #fff;
 }
+#sel {
+	background-color: #984b43;
+	color:#fff;
+}
 
 #cindetails {
 	color: #fff;
@@ -198,6 +202,7 @@ font-family: ORATOR STD;
 	border: 1px solid #000;
 	border-spacing: 0px;
 	margin: 0px auto;
+	color:#fff;
 }
 
 #movieinfo .img {
@@ -243,14 +248,22 @@ font-family: ORATOR STD;
 
 #seatinfotbl {
 	margin: 10px auto;
+	
+	
+}
+#notsel{
+	background-color:#fff;	
+	color:#000;
 }
 
 #seatinfotbl input[type="submit" i] {
 	width: 70px;
+	
 }
 
 #seatinfotbl .seattableai{
 	margin-right: 10px;
+	
 }
 
 #subcontainer #thankyou1{
@@ -292,6 +305,7 @@ h5 {
 	float:right;
 	padding: 50px 500px 0px 0px;
 }
+
 h1{
 	color: #fff;
 	font-family:ORATOR STD;
