@@ -69,7 +69,7 @@ $result = mysqli_query($connection, $query);
 												//echo " c1:".$count11;
 												
 												?>
-													<td><input class="<?php if(($count1 == 3) or ($count1 == 13) or ($count1 == 23) or ($count1 == 33) or ($count1 == 43) or ($count1 == 53) or ($count1 == 63) or ($count1 == 73) or ($count1 == 83) or ($count1 == 93) or ($count1 == 7) or ($count1 == 17) or ($count1 == 27) or ($count1 == 37) or ($count1 == 47) or ($count1 == 57) or ($count1 == 67) or ($count1 == 77) or ($count1 == 87) or ($count1 == 97)) { echo "seattableai"; } ?>" type="submit" name="seatnum" value="reserved" disabled="disabled" ></td>
+													<td><input id="sel" class="<?php if(($count1 == 3) or ($count1 == 13) or ($count1 == 23) or ($count1 == 33) or ($count1 == 43) or ($count1 == 53) or ($count1 == 63) or ($count1 == 73) or ($count1 == 83) or ($count1 == 93) or ($count1 == 7) or ($count1 == 17) or ($count1 == 27) or ($count1 == 37) or ($count1 == 47) or ($count1 == 57) or ($count1 == 67) or ($count1 == 77) or ($count1 == 87) or ($count1 == 97)) { echo "seattableai"; } ?>" type="submit" name="seatnum" value="reserved" disabled="disabled" ></td>
 												<?php
 												$count1 = $count1 + 1;
 												break;
@@ -78,7 +78,7 @@ $result = mysqli_query($connection, $query);
 												//echo " s:".$row1['seatnum'];
 												//echo " c1:".$count11;
 												?>
-													<td><input class="<?php if(($count1 == 3) or ($count1 == 13) or ($count1 == 23) or ($count1 == 33) or ($count1 == 43) or ($count1 == 53) or ($count1 == 63) or ($count1 == 73) or ($count1 == 83) or ($count1 == 93) or ($count1 == 7) or ($count1 == 17) or ($count1 == 27) or ($count1 == 37) or ($count1 == 47) or ($count1 == 57) or ($count1 == 67) or ($count1 == 77) or ($count1 == 87) or ($count1 == 97)) { echo "seattableai"; } ?>" type="submit" name="seatnum" value="<?php echo $count1; ?>" ></td>
+													<td><input id="notsel" class="<?php if(($count1 == 3) or ($count1 == 13) or ($count1 == 23) or ($count1 == 33) or ($count1 == 43) or ($count1 == 53) or ($count1 == 63) or ($count1 == 73) or ($count1 == 83) or ($count1 == 93) or ($count1 == 7) or ($count1 == 17) or ($count1 == 27) or ($count1 == 37) or ($count1 == 47) or ($count1 == 57) or ($count1 == 67) or ($count1 == 77) or ($count1 == 87) or ($count1 == 97)) { echo "seattableai"; } ?>" type="submit" name="seatnum" value="<?php echo $count1; ?>" ></td>
 												<?php
 												$count1 = $count1 + 1;
 											}
