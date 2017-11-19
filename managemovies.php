@@ -67,11 +67,10 @@ include("database.php");
 					<tr>
 						<td><div id="in">Cinema: </div></td> 
 						<td>
-							<select name="cinema">
+							<select id="in" name="cinema">
 								<option id="in" value="1" selected>Cinema 1</option>
 								<option id="in" value="2">Cinema 2</option>
 								<option id="in" value="3">Cinema 3</option>	
-								<option id="in" value="4">Cinema 4</option>
 							</select>
 						</td>
 					</tr>
