@@ -20,7 +20,7 @@ $movieid = $_POST['movieid'];
 				<a class="mnu" href="#promos"><img src="img/popcorn.png" width="30" height="30">Promos and Events</a>
 			</div>  
 <div id = "movies">
-	<div>Edit Movie</div>
+	<div id="in">Edit Movie</div>
 	<?php
 	$query = "SELECT * FROM csinfo where movieid='$movieid'";
 	$result = mysqli_query($connection, $query);

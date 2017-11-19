@@ -53,7 +53,7 @@ include("database.php");
 	</table>
 
 	
-	<div>Add New Movie</div>
+	<div id="in">Add New Movie</div>
 	<form action="moviesave.php" method="POST">
 
 					<tr>
