@@ -31,7 +31,8 @@ include("database.php");
 			while($row = mysqli_fetch_array($result))
 			{ 
 			?>
-			<tr> 		
+			<tr>
+						<td class="ticketreservationID"><div><?php echo $row['ticketreservationID']; ?></div></td>
 						<td class="seatnum"><div><?php echo $row['seatnum']; ?></div></td>
 						<td class="cinnum"><div><?php echo $row['cinema']; ?></div></td>
 						<td class="movieid"><div><?php echo $row['movieid']; ?></div></td>
@@ -43,7 +44,7 @@ include("database.php");
 						<td class="action">
 							<form action="deleteinfo.php" method="POST">
 								<input id="in" type="submit" name="delete" value="Delete" />
-								<input id="in"type="hidden" name="id" value="<?php echo $row['movieid']; ?>" >
+								<input id="in"type="hidden" name="ticketreservationID" value="<?php echo $row['ticketreservationID']; ?>" >
 							</form>
 						</td>
 					</tr>
