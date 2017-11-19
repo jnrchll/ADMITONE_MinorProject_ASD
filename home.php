@@ -31,7 +31,7 @@ $result = mysqli_query($connection, $query);
 			<form action="buyticket.php" method="POST">
 			<div>
 				<span id="timesched">Time schedule: </span>
-					<select name="timesel">
+					<select id="op" name="timesel">
 						<option id="op" value="10:00AM-12:00PM" selected>10:00AM-12:00PM</option>
 						<option id="op" value="01:00PM-03:00PM">01:00PM-03:00PM</option>
 						<option id="op" value="04:00PM-06:00PM">04:00PM-06:00PM</option>	
