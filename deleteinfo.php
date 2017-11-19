@@ -2,11 +2,11 @@
 session_start(); 
 $loggedinID = $_SESSION['userID']; //userid of logged in user
 
-$movieid = $_POST['movieid'];
+$ticketreservationID = $_POST['ticketreservationID'];
 
 include("database.php");
 
-$query = "delete from ticketreservation where movieid='$movieid'";
+$query = "delete from ticketreservation where ticketreservationID='$ticketreservationID'";
 
 $result = mysqli_query($connection, $query);
 
