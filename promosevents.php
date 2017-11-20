@@ -14,9 +14,9 @@ $result = mysqli_query($connection, $query);
 	
 				<a class="mnu" href="home.php"><img src="img/roll.png" width="30" height="30">Now Showing</a>
 				<a class="mnu" href="comingsoon.php"><img src="img/film.png" width="30" height="30">Coming Soon</a>
-				<a class="mnu" href="promosevents.php"><img src="img/popcorn.png" width="30" height="30">Promos and Events</a>
+				<a class="mnu" href="aboutcinema.php"><img src="img/popcorn.png" width="30" height="30">About Cinema</a>
 			</div> 
 			<div id="thankyou1">
-							<h1>No Promos and Events Available!</h1>
+							<h1>-ABOUT CINEMA-</h1>
 	</div>
 </html>         	
