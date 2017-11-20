@@ -9,7 +9,7 @@
             
           <div id="MainContainer">
 			<?php 
-			include("menu1.php");
+			include("menu3.php");
 			?>
 			<div id="display">
             
