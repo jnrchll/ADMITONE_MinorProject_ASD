@@ -1,3 +1,4 @@
+
 <?php
 session_start(); 
 $loggedinID = $_SESSION['userID'];
@@ -5,7 +6,7 @@ $loggedinID = $_SESSION['userID'];
 include("menu2.php");
 include("database.php");
 
-$query = "SELECT * FROM csinfo";
+$query = "SELECT * FROM moviesinfo";
 	
 $result = mysqli_query($connection, $query);
 ?>
@@ -14,26 +15,8 @@ $result = mysqli_query($connection, $query);
 				<a class="mnu" href="home.php"><img src="img/roll.png" width="30" height="30">Now Showing</a>
 				<a class="mnu" href="comingsoon.php"><img src="img/film.png" width="30" height="30">Coming Soon</a>
 				<a class="mnu" href="aboutcinema.php"><img src="img/popcorn.png" width="30" height="30">About Cinema</a>
-			</div>          		
-	<div id="showing">
-	<?php
-	while($row = mysqli_fetch_array($result))
-	{
-	?>
-	
-		<div class="poster" >
-			<div>
-				<img src="img/<?php echo $row['imgfilename']; ?>" width="300" height="430">
-			</div>
-			<div>
-				<span id="movietitlelabel">Movie Title:  <?php echo $row['movietitle']; ?></span>
-			</div>
-		</div>
-	<?php } ?>	
-	
+			</div> 
+			<div id="thankyou1">
+							<h1>-ABOUT CINEMA-</h1>
 	</div>
-			
-<!-- do not delete -->
-		</div>
-	</div>
-</html>
+</html>         	
