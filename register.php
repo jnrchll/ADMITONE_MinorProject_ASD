@@ -35,7 +35,7 @@
 						<td><input id="type" type="text" name="age" value="" /></br></td>
 					</tr>
 					<tr>
-						<td><div id="frm">Email Address: </td>
+						<td><div id="frm">Username: </td>
 						<td><input id="type" type="text" name="emailadd" value="" /></br></td>
 					</tr>
 					<tr>

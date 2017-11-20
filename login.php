@@ -27,7 +27,7 @@
 				<input type="hidden" name="task" value="user_validate">
 				<table>
 					<tr>
-						<td><div id="frm">Email Address: </td>
+						<td><div id="frm">Username: </td>
 						<td><input id="type" type="text" name="emailadd" value="" /></br></td>
 					</tr>
 					<tr>

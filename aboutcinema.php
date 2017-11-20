@@ -18,5 +18,8 @@ $result = mysqli_query($connection, $query);
 			</div> 
 			<div id="thankyou1">
 							<h1>-ABOUT CINEMA-</h1>
-	</div>
+							<p> Admit One offers Cinema Reservation Online. Avoid the hassle of lining up everytime you 
+							 watch a movie. Check the latest now showing movie schedules on the best cinema.
+							 Entertainment at its best. </p>
+							</div>
 </html>         	
