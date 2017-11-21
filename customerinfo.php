@@ -15,6 +15,7 @@ $result = mysqli_query($connection, $query);
 
 
 ?>
+
 <div id="seatinfocontainer">
 	<div id="totalpayment">
 		<h1>Selected Seat #: <?php echo $seatnum; ?></h1>

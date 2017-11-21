@@ -9,6 +9,7 @@ $query = "SELECT * FROM moviesinfo";
 	
 $result = mysqli_query($connection, $query);
 ?>
+
  <div id="menu">
 	
 				<a class="mnu" href="home.php"><img src="img/roll.png" width="30" height="30">Now Showing</a>
@@ -27,7 +28,7 @@ $result = mysqli_query($connection, $query);
 			?>
 			<div id="prof">
 				<form action="update.php" method="POST">
-				<table>
+				<table id="pf">
 					<tr>
 						<td><div id="frm">First Name: </div></td>
 						<td><input id="type" type="text" name="fname" value="<?php echo $row["firstname"];?>" /></td>
@@ -37,20 +38,12 @@ $result = mysqli_query($connection, $query);
 						<td><input id="type" type="text" name="lname" value="<?php echo $row["lastname"];?>" /></br></td>
 					</tr>
 					<tr>
-						<td><div id="frm">Age: </div></td> 
-						<td><input id="type" type="text" name="age" value="<?php echo $row["age"];?>" /></br></td>
-					</tr>
-					<tr>
 						<td><div id="frm">Email Address: </div></td>
 						<td><input id="type" type="text" name="emailadd" value="<?php echo $row["emailaddress"];?>" /></br></td>
 					</tr>
 					<tr>
 						<td><div id="frm">Password: </div></td>
 						<td><input id="type" type="password" name="password1" value="<?php echo $row["password"];?>" /></br></td>
-					</tr>
-					<tr>
-						<td><div id="frm">Re-type password: </div></td>
-						<td><input id="type" type="password" name="password2" value="<?php echo $row["password"];?>" /></br></td>
 					</tr>
 					<tr>
 					<td><input id="type" type="submit" name="submit" value="Save Changes" /></td>

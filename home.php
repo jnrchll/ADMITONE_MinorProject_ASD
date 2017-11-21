@@ -52,4 +52,5 @@ $result = mysqli_query($connection, $query);
 <!-- do not delete -->
 		</div>
 	</div>
+
 </html>
