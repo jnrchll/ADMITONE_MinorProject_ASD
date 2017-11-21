@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Nov 19, 2017 at 02:05 PM
+-- Generation Time: Nov 21, 2017 at 10:48 AM
 -- Server version: 5.7.19
 -- PHP Version: 5.6.31
 
@@ -58,7 +58,7 @@ CREATE TABLE IF NOT EXISTS `moviesinfo` (
   `imgfilename` varchar(100) DEFAULT NULL,
   `cinema` enum('1','2','3','4') NOT NULL,
   PRIMARY KEY (`movieid`)
-) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `moviesinfo`
@@ -67,7 +67,7 @@ CREATE TABLE IF NOT EXISTS `moviesinfo` (
 INSERT INTO `moviesinfo` (`movieid`, `movietitle`, `description`, `imgfilename`, `cinema`) VALUES
 (1, 'Thor: Ragnarok', 'Imprisoned on the other side of the universe,\r\nthe mighty Thor finds himself in a deadly gladiatorial\r\ncontest that pits him against the Hulk, his former ally\r\nand fellow Avenger. Thor\'s quest for survival leads him\r\nin a race against time to prevent the all-powerful Hela\r\nfrom destroying his home world and the Asgardian civilization.', 'thor.jpg', '1'),
 (11, 'Bad Genius', 'Bad Genius Test', 'badgenius.jpg', '2'),
-(3, 'Geostorm test', 'Geostorm test', 'geostorm.jpg', '4');
+(13, 'geostorm', 'geostorm', 'geostorm.jpg', '3');
 
 -- --------------------------------------------------------
 
@@ -109,24 +109,18 @@ CREATE TABLE IF NOT EXISTS `ticketreservation` (
   `customerage` int(11) NOT NULL,
   `contactnum` varchar(100) NOT NULL,
   PRIMARY KEY (`ticketreservationID`)
-) ENGINE=MyISAM AUTO_INCREMENT=37 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=54 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `ticketreservation`
 --
 
 INSERT INTO `ticketreservation` (`ticketreservationID`, `seatnum`, `cinema`, `movieid`, `time`, `reservedby_userID`, `customerfname`, `customerlname`, `customerage`, `contactnum`) VALUES
-(1, 4, 2, 2, '01:00PM-03:00PM', 15, 'anna', 'graza', 11, '21312932'),
-(6, 43, 1, 1, '07:00PM-09:00PM', 15, 'anna', 'graza', 28, '09568411783'),
-(31, 47, 1, 1, '10:00AM-12:00PM', 18, 'diniris', 'stormborn', 20, '43141'),
-(32, 4, 1, 1, '01:00PM-03:00PM', 18, 'abby', 'thrisha', 20, '097867564'),
-(33, 24, 1, 1, '04:00PM-06:00PM', 18, 'abby', 'thrisha', 20, '524536'),
-(34, 15, 2, 2, '01:00PM-03:00PM', 18, 'thea', 'santos', 18, '32525'),
-(29, 1, 1, 1, '10:00AM-12:00PM', 18, 'abby', 'graza', 30, '92183981'),
-(30, 25, 1, 1, '01:00PM-03:00PM', 18, 'ac', 'gelicame', 12, '3423423'),
-(36, 5, 1, 1, '10:00AM-12:00PM', 18, 'Jean', 'Lacierda', 19, '0923123123'),
-(35, 44, 1, 1, '10:00AM-12:00PM', 18, 'Jean', 'Lacierda', 19, ''),
-(28, 75, 4, 3, '01:00PM-03:00PM', 18, 'an', 'gr', 33, '334234234');
+(46, 2, 1, 1, '10:00AM-12:00PM', 18, 'Abby', 'Graza', 11, '423432'),
+(48, 33, 1, 1, '10:00AM-12:00PM', 15, 'Jean', 'Lacierda', 19, '12136521'),
+(50, 96, 1, 1, '01:00PM-03:00PM', 18, 'Shann', 'Locsin', 19, '2443413'),
+(51, 41, 1, 1, '10:00AM-12:00PM', 25, 'ac', 'g', 11, '32412'),
+(53, 45, 1, 1, '10:00AM-12:00PM', 22, 'Abby', 'Graza', 20, '12133');
 
 -- --------------------------------------------------------
 
@@ -139,27 +133,33 @@ CREATE TABLE IF NOT EXISTS `users` (
   `userID` int(11) NOT NULL AUTO_INCREMENT,
   `firstname` varchar(50) NOT NULL,
   `lastname` varchar(50) NOT NULL,
-  `age` int(3) NOT NULL,
   `emailaddress` varchar(100) NOT NULL,
   `password` varchar(30) NOT NULL,
   `usertype` enum('administrator','user') NOT NULL DEFAULT 'user',
   PRIMARY KEY (`userID`)
-) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`userID`, `firstname`, `lastname`, `age`, `emailaddress`, `password`, `usertype`) VALUES
-(16, 'arya', 'noone', 12, 'diniris@gmail.com', 'password', 'user'),
-(15, 'q', 'q', 11, 'qp', 'qp', 'administrator'),
-(14, 'q', 'q', 12, 'q', '', 'user'),
-(13, 'zimmy', 'zim', 13, 'blahblah', 'as', 'administrator'),
-(12, 'desiree', 'pedida', 19, 'des@gmail.com', 'des', 'user'),
-(11, 'Abby', 'ggggg', 20, 'athrisha.graza02@gmail.com', 'abbythrisha', 'user'),
-(17, 'aaaa', 'gggg', 32, 'a@g.com', 'aa', 'administrator'),
-(18, 'ab', 'gr', 22, 'ab', 'aa', 'user'),
-(19, 'jackie', 'chan', 12, 'jackie@gmail.com', 'jackie', 'administrator');
+INSERT INTO `users` (`userID`, `firstname`, `lastname`, `emailaddress`, `password`, `usertype`) VALUES
+(16, 'arya', 'noone', 'diniris@gmail.com', 'password', 'user'),
+(15, 'q', 'q', 'qp', 'qp', 'administrator'),
+(14, 'q', 'q', 'q', '', 'user'),
+(13, 'zimmy', 'zim', 'blahblah', 'as', 'administrator'),
+(12, 'desiree', 'pedida', 'des@gmail.com', 'des', 'user'),
+(11, 'Abby', 'ggggg', 'athrisha.graza02@gmail.com', 'abbythrisha', 'user'),
+(17, 'aaaa', 'gggg', 'a@g.com', 'aa', 'administrator'),
+(18, 'ab', 'gr', 'ab', 'aa', 'user'),
+(19, 'jackie', 'chan', 'jackie@gmail.com', 'jackie', 'administrator'),
+(20, 'desiree', 'pedida', 'des', 'as', 'user'),
+(21, 'ac', 'gelicame', 'ac@gmail.com', 'acgelicame', 'user'),
+(22, 'a', 'g', 'a@g', 'aa', 'user'),
+(23, 'ab', 'g', 'aa@g', 'aa', 'user'),
+(24, 'zim', 'l', 'zl@g', 'aa', 'user'),
+(25, 'des', 'pedida', 'des@g', 'asd', 'administrator'),
+(26, '*', '*', 'sada@g', 'aa', 'user');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
